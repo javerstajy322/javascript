@@ -31,7 +31,11 @@ var counter = (function() {
         return count++;
     }
 }());
-
+//// ### Другая реализация счетчика без замыкания.
+var counter = function(num) {
+    counter.count = num !== undefined ? num : counter.count;
+    return counter.count++;
+}
 //// То что написал я.
 //// Не много не понимаю. Т.к. оно работает. а по сути не должно, наверно.
 var func = function () {
