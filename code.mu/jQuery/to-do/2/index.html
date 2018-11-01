@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo jQuery 30.10.18</title>
+</head>
+
+<style>
+    #todos {
+    width: 300px;
+
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.editText {
+    display: none;
+    margin-left: 17px;
+}
+
+.stopEditText {
+    display: none;
+}
+
+.removeItem {
+    float: right;
+}
+
+#parentItem {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemText {
+    width: 100%;
+}
+
+</style>
+
+<body>
+    <div id="todos">
+        <input id="newTodoText" type="text">
+        <button id="addItem">Кнопка</button>
+        <ul id="parentItem">
+            
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

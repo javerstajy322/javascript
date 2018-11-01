@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="start()">
+    Дан абзац. Даны чекбоксы 'перечеркнуть', 'сделать жирным', 'сделать красным'. Если соответствующий чекбокс отмечен
+    - заданное действие происходит с абзацем (становится красным, например). Если чекбоксу снять отметку - действие
+    отменяется.
+    <p id="paragraph">String</p>
+    <input type="checkbox" value="text-decoration:line-through;">перечеркнуть
+    <input type="checkbox" value="font-weight:bold;">сделать жирным
+    <input type="checkbox" value="color:red">сделать красным
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

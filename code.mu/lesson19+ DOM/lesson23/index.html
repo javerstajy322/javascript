@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 600px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+
+
+    <ol>
+        <li>
+            Даны картинки. Привяжите к каждой картинке событие, чтобы по клику на картинку алертом выводился ее src
+            <br>
+            <img src="img/1.PNG" alt="">
+            <img src="img/2.PNG" alt="">
+            <img src="img/1.PNG" alt="">
+        </li>
+        <br>
+        <li>
+            Даны ссылки. Привяжите всем ссылкам событие - по наведению на ссылку в атрибут title запишется ее текст
+            <br>
+            <a href="" title="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+        </li>
+        <br>
+        <li class="test2">
+            Привяжите всем ссылкам событие - по наведению на ссылку в конец ее текста дописывается ее href в круглых скобках
+            <br>
+            +
+            <br>
+            Дополните предыдущую задачу: после первого наведению на ссылку следует отвязать от нее событие, которое добавляет href в конец текста.
+            <a href="" title="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+        </li>
+        <br>
+        <li>
+            Привяжите всем инпутам следующее событие - по потери фокуса каждый инпут выводит свое value в абзац с id="test".
+            <br>
+            <input type="text" id="test3">
+            <br>
+            <input type="text" id="test3">
+            <br>
+            <input type="text" id="test3">
+            <p id="test4"></p>
+        </li>
+        <br>
+        <li>
+            Для всех инпутов сделайте так, чтобы они выводили свой value алертом при нажатии на любой из них, но только по первому нажатию. Повторное нажатие на инпут не должно вызывать реакции
+            <br>
+            <input type="text" class="test4" value="1">
+            <br>
+            <input type="text" class="test4" value="2">
+            <br>
+            <input type="text" class="test4" value="3">
+        </li>
+        <br>
+        <li>
+            Даны абзацы с числами. По нажатию на абзац в нем должен появится квадрат числа, которое он содержит.
+            <p class="test5">2</p>
+            <p class="test5">s</p>
+            <p class="test5">4</p>
+        </li>
+        <br>
+        <li>
+            Даны инпуты. Сделайте так, чтобы все инпуты по потери фокуса проверяли свое содержимое на правильное количество символов. Сколько символов должно быть в инпуте, указывается в атрибуте data-length. Если вбито правильное количество, то граница инпута становится зеленой, если неправильное - красной.
+            <br>
+            <input type="text" class="test6" data-length="4">
+            <br>
+            <input type="text" class="test6" data-length="6">
+            <br>
+            <input type="text" class="test6" data-length="7">
+        </li>
+        <br>
+        <li>
+            Даны дивы. По первому нажатию на каждый див он красится красным фоном, по второму красится обратно и так далее каждый клик происходит чередование фона. Сделайте так, чтобы было две функции: одна красит в красный цвет, другая в зеленый и они сменяли друг друга через removeEventListener.
+            <div class="toggle">123</div>
+            <div class="toggle">123</div>
+            <div class="toggle">123</div>
+        </li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

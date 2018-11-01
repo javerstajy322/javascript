@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 600px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <ol>
+        <h2>Работа с классами</h2>
+        <li>
+            Дан элемент #elem. Добавьте ему класс www.
+            <br> +
+            <br> Дан элемент #elem. Удалите у него класс www
+            <br> +
+            <br> Дан элемент #elem. Проверьте наличие у него класса www.
+            <p id="elem1">#elem</p>
+        </li>
+        <br>
+        <li>
+            Дан элемент #elem. Добавьте ему класс www, если его нет и удалите - если есть.
+            <p id="elem2" class="sss aaa bbb">#elem2</p>
+            <button onclick="f1()">Кнопка</button>
+            <br> <br> Дан элемент #elem. Узнайте количество его классов.
+            <br> <button onclick="f2()">Кнопка</button>
+            <br> <br> Дан элемент #elem. Выведите последовательно алертом его классы.
+            <br> <button onclick="f3()">Кнопка</button>
+        </li>
+        <br>
+        <h2>Работа с CSS</h2>
+        <li>
+            Дан элемент #elem. Сделайте его красного цвета, размером 30px, добавьте ему границу. Решите задачу с
+            помощью свойства cssText.
+            <p id="elem3" onclick="f4()">Lorem lorem</p>
+        </li>
+        <br>
+        <h2>Свойство tagName</h2>
+        <li>
+            Дан элемент #elem. По клику на него выведите название его тега
+            <br> +
+            <br> Дан элемент #elem. По клику на него выведите название его тега в нижнем регистре
+            <p id="elem4" onclick="f5()">Элемент</p>
+        </li>
+        <br>
+        <li>
+            Даны элементы с классом www. Добавьте каждому элементу в конец название его тега в нижнем регистре
+            <p id="elem5" onclick="f6()">Элемент</p>
+        </li>
+        <br>
+        <h2>Вставка элементов через appendChild</h2>
+        <li>
+            Дан ol. Вставьте ему в конец li с текстом 'пункт'
+            <ol id="ol" onclick="f7()">
+                click
+            </ol>
+        </li>
+        <li>
+            Дан ul. Дан массив. Вставьте элементы этого массива в конец ul так, чтобы каждый элемент стоял в своем li
+            <br> + <b>Привязывание событий при вставке</b>
+            <br> Дан ul. Дан массив. Вставьте элементы этого массива в конец ul так, чтобы каждый элемент стоял в своем
+            li.
+            Сделайте так, чтобы к вставляемым li было привязано следующее событие: по нажатию на li она должна вывести
+            на экран свой текст.
+            <ul id="ul" onclick="f8()">123</ul>
+        </li>
+        <br>
+        <h2>Вставка элементов через insertBefore</h2>
+        <li>
+            Дан элемент ul, а в нем li #elem. Вставьте перед элементом #elem новую li с текстом '!!!'.
+            <ul id="ul2" onclick="f10()">111
+                <li id="elem6">123</li>
+                <li>456</li>
+            </ul>
+        </li>
+        <br>
+        <h2>Вставка элементов через insertAdjacentHTML</h2>
+        <li>
+            Дан элемент #elem. Вставьте перед ним span с текстом '!!!'.
+            <br>
+            elem.insertAdjacentHTML('beforeBegin', '<span>!!!</span>');
+            <br><br>
+            <p id="elem7" onclick="f11()">Элемент</p>
+            <br>
+            Дан элемент #elem. Вставьте после него span с текстом '!!!'
+            <br>
+            elem.insertAdjacentHTML('afterEnd','<span>!!!</span>');
+            <br>
+            <br>
+            Дан элемент #elem. Вставьте ему в начало span с текстом '!!!'
+            <br>
+            elem.insertAdjacentHTML('afterBegin','<span>!!!</span>');
+            <br>
+            <br>
+            Дан элемент #elem. Вставьте ему в конец span с текстом '!!!'
+            <br>
+            elem.insertAdjacentHTML('beforeEnd','<span>!!!</span>');
+        </li>
+        <h2>Потомки</h2>
+        <li>
+            Дан элемент #elem. Найдите первого потомка этого элемента и сделайте его текст красного цвета
+            <br>
+            elem.firstElementChild.style.color = 'red';
+            <br>
+            <br>
+            Дан элемент #elem. Найдите последнего потомка этого элемента и сделайте его текст красного цвета
+            <br>
+            elem.lastElementChild.style.color = 'red';
+        </li>
+        <h2>Соседи</h2>
+        <li>
+            Дан элемент #elem. Найдите его соседа сверху и добавьте ему в конец текст '!'.
+            <br>
+            var prev = elem.previousElementSibling;
+            <br>
+            <br>
+            Дан элемент #elem. Найдите его соседа снизу и добавьте ему в конец текст '!'.
+            <br>
+            var prev = elem.nextElementSibling;
+            <br>
+            <br>
+            Дан элемент #elem. Найдите его соседа снизу его соседа снизу (следующий элемент за соседним) и добавьте ему
+            в конец текст '!'.
+            <br>
+            var elem = document.getElementById('elem');
+            <br> var prev = elem.nextElementSibling.nextElementSibling;
+            <br> prev.innerHTML = prev.innerHTML + '!';
+        </li>
+        <h2>Родители</h2>
+        <li>
+            Дан элемент #elem. Найдите его родителя и покрасьте его в красный цвет.
+            <br>
+            <br> var elem = document.getElementById('elem');
+            elem.parentElement.style.color = 'red';
+            <br>
+            <br>
+            Дан элемент #elem. Найдите родителя его родителя и покрасьте его в красный цвет.
+            <br>
+            <br> var elem = document.getElementById('elem');
+            elem.parentElement.parentElement.style.color = 'red';
+        </li>
+        <h2>Удаление и клонирование</h2>
+        <li>
+            Дан элемент #parent, внутри него дан элемент #child. Дана кнопка. По нажатию на эту кнопку удалите элемент
+            #child
+            <ul id="parent1">
+                <li id="child1">1</li>
+                <li>2</li>
+                <button id="button1">Кнопка</button>
+            </ul>
+        </li>
+        <h2>Пропустил. Слишком много методов обращения.</h2>
+        <h2>Практика.</h2>
+        <li>
+            Дан массив. Создайте ul через createElement, затем вставьте каждый элемент этого массива в отдельную li
+            внутри этой ul, затем вставьте эту ul в конец body.
+            
+        </li>
+    </ol>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

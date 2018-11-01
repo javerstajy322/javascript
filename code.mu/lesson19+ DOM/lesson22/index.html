@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 600px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+
+    <ol>
+        <li> Создайте отсчет от 0 до бесконечности:
+            <p id="test1">0</p>
+            <button onclick="f1()">Кнопка</button>
+        </li>
+        <br>
+        <br>
+        <li> Создайте отсчет с кнопкой остановки:
+            <p id="test2">0</p>
+            <button id="button1" onclick="f3()">Кнопка старт</button>
+            <button id="button2" onclick="f5()" disabled>Кнопка остановки</button>
+        </li>
+        <br>
+        <br>
+        <li onload="go()">
+            Создайте тикающие часики:
+            <a href="clock/index.html">link</a>
+        </li>
+        <li>
+            Создайте таймер обратного отсчета:
+            <p id="test3">10</p>
+            <p id="stop"></p>
+            <button onclick="f7go()">Кнопка</button>
+        </li>
+        <br>
+        <li>
+            Создайте карусель:
+            <br>
+            <img id="img1" src="img/slider-item-1.png" alt="">
+            <img id="img2" src="img/slider-item-2.png" alt="">
+            <img id="img3" src="img/slider-item-3.png" alt="">
+            <br>
+            <button id="go" onclick="f8go()">Кнопка</button>
+        </li>
+        <br>
+        <li>
+            Создайте карусель:
+            <br>
+            <img id="f9img1" src="img/slider-item-1.png" alt="">
+            <img id="f9img2" src="img/slider-item-2.png" alt="">
+            <img id="f9img3" src="img/slider-item-3.png" alt="">
+            <img id="f9img4" src="img/slider-item-4.png" alt="">
+            <img id="f9img5" src="img/slider-item-5.png" alt="">
+            <img id="f9img6" src="img/slider-item-6.png" alt="">
+            <br>
+            <button id="f9go" onclick="f9go()">Кнопка</button>
+            <button id="f9stop" onclick="f9stop()" disabled>Stop</button>
+        </li>
+        <br>
+        <li>
+            Создать отсчет до полуночи:
+            <a href="timer-00-00/index.html">link</a>
+        </li>
+    </ol>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

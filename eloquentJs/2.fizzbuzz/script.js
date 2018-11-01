@@ -34,15 +34,15 @@ for (i = 0; i < 100; i++ ) {
 
 // Мой вариант. №2. 
 // Тупил с делением без остатка.
-for (var i = 1; i < 100; i++ ) {
+for (var i = 1; i < 100; i++) {
     var number = "";
-    if (!(i % 3)) {
+    if (i % 3 == 0) {
         number += "Fizz";
-    } 
-    if (!(i % 5)) {
+    }
+    if (i % 5 == 0) {
         number += "Buzz";
     }
-    if (((i % 3)) && ((i % 5))) {
+    if (i % 3 && i % 5) {
         number += i;
     }
     console.log(number);

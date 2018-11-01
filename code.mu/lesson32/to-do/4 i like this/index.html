@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-do</title>
+</head>
+<style>
+    #appWindow {
+    width: 220px;
+    margin: 0 auto;
+}
+
+#addItem {
+    width: 216px;
+}
+
+.item.complite .text {
+    text-decoration: line-through;
+}
+
+.item.edit .editText {
+    display: block;
+    width: 100%;
+
+}
+
+.item.edit .text {
+    display: none;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.editText {
+    display: none;
+}
+
+.text {
+    width: 100%;
+}
+
+</style>
+
+
+<body>
+    <div id="appWindow">
+        <input type="text" id="addItem">
+        <div id="parentWrapper">
+            <!-- <div class="item">
+                <input class="checkbox" type="checkbox" name="">
+                <div class="text">123</div>
+                <input class="editText" type="text">
+                <button class="removeItem">X</button>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

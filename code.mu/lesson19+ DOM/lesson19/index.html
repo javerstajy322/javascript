@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<style>
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+</style>
+<button onclick="func1()">Нажмите на меня</button>    
+<br>
+<br>
+<button onclick="func2()">Нажми на меня</button>
+<input type="text" id="input" value="???">
+<br>
+<br>
+<button onclick="func3()">Нажми на меня</button>
+<input type="text" id="input1" placeholder="Введите число!">
+<br>
+<br>
+<button onclick="func4()">Нажми на меня</button>
+<input type="text" id="input2" value="111">
+<input type="text" id="input3" value="222">
+<br>
+<br>
+<input type="button" onclick="func5(this)" value="Нажми на меня">
+<br>
+<br>
+<button onclick="func6()">Нажми на меня</button>
+<input type="text" id="input4" value="Какой-то текст!">
+<br>
+<br>
+<button onclick="func7()">Заблокировать</button>
+<button onclick="func8()">Отблокировать</button>
+<input type="text" id="input5" value="Какой-то текст!">
+<br>
+<br>
+<b>/* Атрибуты события */</b>
+<br>
+<br>
+<button onclick="alert('sss');">Нажатие на кнопку.</button>
+<br>
+<br>
+<button onmouseover="alert('Привет!')">Наведение на кнопку.</button>
+<br>
+<br>
+<button ondblclick="alert('Привет!')">Двойное нажатие на кнопку.</button>
+<br>
+<br>
+<div onmouseout="alert('Привет!')" style="border: solid 1px red; width: 300px">Наведение и убирание мыши.</div>
+<br>
+<br>
+<input type="text" id="input6" value="Какой-то текст!">
+<button onclick="func9()">Нажми на меня</button>
+<br>
+<br>
+<input type="text" id="input7" value="Какой-то текст!">
+<button onclick="func10()">Нажми на меня</button>
+<br>
+<br>
+<img id="img" src="img/1.PNG" alt="" width="100" height="100">
+<button onclick="func11()">Нажми на меня</button>
+<br>
+<br>
+<b>/* Работа с this */</b>
+<br>
+<br>
+<input onclick="func12(this)" type="text" name="" id="input8" value="Нажми на меня">
+<br>
+<br>
+<input onclick="func13(this)" type="text" name="" value="Нажми на меня">
+<br>
+<br>
+<b>Тут использовались атрибуты событий. onfocus / onblur.</b>
+<br>
+<input onfocus="func13(this)" onblur="func14(this)" type="text" name="" id="input9" value="Нажми на меня">
+<br>
+<br>
+<input onclick="func15(this)" type="submit" name="" id="input10" value="Нажми на меня">
+<br>
+<br>
+<input onclick="func16(this)" type="submit" name="" id="input11" value="Нажми на меня">
+<br>
+<br>
+<img onmouseover="func17(this)" onmouseout="func18(this)" id="img2" src="img/1.PNG" alt="" width="100" height="100">
+<br>
+<br>
+<b>/* Работа с CSS */</b>
+<br>
+<br>
+<input type="text" id="input12" value="Какой-то текст!">
+<button onclick="func19()">Нажми на меня</button>
+<br>
+<br>
+<input type="text" id="input13" value="Какой-то текст!">
+<button onclick="func20()">Нажми на меня</button>
+<button onclick="func21()">Потом на меня</button>
+<br>
+<br>
+<input type="text" id="input14" value="Какой-то текст!">
+<button onclick="func22()">Нажми на меня</button>
+<br>
+<br>
+<input onclick="func23(this)" type="submit" id="input16" value="Какой-то текст!">
+<input onclick="func24(this)" type="submit" id="input17" value="Нажмите чтобы откалибровать элемент" style="display:none;">
+<br>
+<br>
+<input onclick="func25(this)" type="submit" id="input18" value="0">
+<br>
+<br>
+<input type="text" id="input19" value="Какой-то текст!">
+<button onclick="func26()">Нажми на меня</button>
+<br>
+<br>
+<input class="aaa bbb ccc" type="text" id="input20" value="Какой-то текст!">
+<button onclick="func27()">Нажми на меня</button>
+<br>
+<br>
+<b>/* Закрепление пройденного */</b>
+<br>
+<br>
+<input type="text" id="input21" value="111">
+<input type="text" id="input22" value="222">
+<button onclick="func28()">Нажми на меня</button>
+<br>
+<br>
+<br>
+<b>Квадрат числа</b>
+<br>
+<input type="text" name="" id="input23">
+<input type="text" name="" id="input24" disabled value="Здесь появляется число">
+<button onclick="func29()">Нажимай</button>
+<br>
+<br>
+<b>Изменение курсора</b>
+<br>
+<input type="submit" name="" id="input25" onclick="func30(this)">
+<br>
+<br>
+<div style="border: solid 1px red">
+    <br>
+    <b>Типо калькулятор</b>
+    <br>
+    <br>
+    <input type="text" name="" id="input26">
+    <br>
+    <br>
+    <button onclick="func31addText('+')">+</button>
+    <button onclick="func31addText('-')">-</button>
+    <button onclick="func31addText('/')">/</button>
+    <button onclick="func31addText('*')">*</button>
+    <br>
+    <br>
+    <button onclick="func31addText('1')">1</button>
+    <button onclick="func31addText('2')">2</button>
+    <button onclick="func31addText('3')">3</button>
+    <button onclick="func31addText('4')">4</button>
+    <button onclick="func31addText('5')">5</button>
+    <button onclick="func31addText('6')">6</button>
+    <button onclick="func31addText('7')">7</button>
+    <button onclick="func31addText('8')">8</button>
+    <button onclick="func31addText('9')">9</button>
+    <br>
+    <br>
+    <button onclick="func31Sum()">=</button>
+</div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

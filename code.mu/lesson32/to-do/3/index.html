@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-do</title>
+</head>
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    .checkbox {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 0;
+    margin-left: 17px;
+}
+
+.write {
+    font-family: inherit;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border: none;
+    border: 2px solid rgb(255, 188, 216);
+    border-radius: 100px;
+    width: 220px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input.write {
+    font-family: inherit;
+}
+
+.write:focus {
+    border: 2px dotted aquamarine;
+}
+
+#jsWrite {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.list {
+    margin: 0 auto;
+    margin-top: 5%;
+    
+    width: 290px;
+    border: 1px solid rgb(194, 0, 0);
+}
+.list>.item:last-child {
+    border-bottom: none;
+}
+
+.item {
+    position: relative;
+    padding: 5px 0;
+    border-bottom: 1px solid palevioletred;
+}
+
+.button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 14px;
+    margin-right: -30px;
+}
+
+
+</style>
+
+
+<body>
+
+    <div class="list">
+        <div class="item main-item">
+            <input class="write" id="jsWrite" type="text">
+        </div>
+        <div class="item">
+            <input class="checkbox" type="checkbox" name="" id="checkbox">
+            <input class="write" type="text">
+            <button class="button">X</button>
+        </div>
+        <div class="item">
+            <input class="checkbox" type="checkbox" name="" id="checkbox">
+            <div class="write">sss</div>
+            <button class="button">X</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

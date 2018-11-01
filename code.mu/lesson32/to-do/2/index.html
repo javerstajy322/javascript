@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-do</title>
+</head>
+<style>
+input#edit {
+    display: none;
+}
+
+.item {
+    display: flex;
+    width: 173px;
+    justify-content: space-between;
+}
+
+.item .edit {
+    display: none;
+}
+
+.item.edit .edit{
+    display: block;
+}
+
+.complite {
+    text-decoration: line-through;
+}
+</style>
+
+
+<body>
+    <div id="checklist">
+        <input type="text" id="addItem" autofocus="" placeholder="Введите задачу">
+        <div id="itemParent">
+            <!-- <input type="checkbox" name="" id="checkbox">
+            <div class="text"></div>
+            <input type="text" id="edit">
+            <button class="cancel">X</button> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
